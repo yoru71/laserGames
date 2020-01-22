@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% endblock %}
+{% block body %}
+<header>
+    {% set route = app.request.attributes.get('_route') %}
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item{% if route == 'chamonixMenu' %} active{% endif %}">
+                    <a class="nav-link h2" href="{{ path('chamonixMenu') }}">Chamonix</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav text-right">
+                <li class="nav-item{% if route == 'laserGameChamonix' %} active{% endif %}">
+                    <a class="nav-link h2" href="{{ path('laserGameChamonix') }}">Laser Game</a>
+                </li>
+                <li class="nav-item{% if route == 'bubbleFootChamonix' %} active{% endif %}">
+                    <a class="nav-link h2" href="{{ path('bubbleFootChamonix') }}">Bubble Foot</a>
+                </li>
+                <li class="nav-item{% if route == 'lancerHacheChamonix' %} active{% endif %}">
+                    <a class="nav-link h2" href="{{ path('lancerHacheChamonix') }}">Lancer de hache</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    
+{% endblock %}

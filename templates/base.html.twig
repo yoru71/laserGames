@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %} Laser Game</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     {% block stylesheets %} {% endblock %}
 </head>
 <body>
-    <div class="container-fluid">
-        {% block body %}{% endblock %}
-    </div> 
+
+{% block body %}{% endblock %}
+<footer class="page-footer footer mt-auto font-small bg-dark py-4 container-fluid" id="main-footer">
+
+    <div class="row bg-dark">
+
+        <div class="col-12 mb-4 mb-xl-0 col-xl-3 text-center ">
+            <h2 class="text-light h4 text-uppercase">Nous retrouver sur</h2>
+            <p class="bg-light d-inline-block p-2 rounded-lg">
+                <a href="#" class="h2 mx-2 facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="h2 mx-2 snapchat"><i class="fab fa-snapchat" aria-hidden="true"></i></a>
+            </p>
+        </div>
+        <div class="col-12 col-xl-3 offset-xl-6 text-center">
+            <p class="my-1">Copyright 2020</p>
+        </div>
+    </div>
+
+</footer>
 
     <script src="{{ asset('js/jquery-3.4.1.slim.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
