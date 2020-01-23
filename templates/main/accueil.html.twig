@@ -4,10 +4,10 @@
     <div class="container">
         <div class="text-center">
             <div class="text-center">
-                <h1>Accueil laserGame</h1>
+                <h1>Urbanarena</h1>
             </div>
-                <h2>Autun</h2>
-                <a href=""><button class="p-3 mb-2 btn btn-primary text-white">Aller sur le site de laser game Autun</button></a>
+                <h2 class="h1">Autun</h2>
+                <a href="{{ path('autunMenu') }}"><button class="p-3 mb-2 btn btn-primary text-white">Accéder à urbanarena d'Autun</button></a>
             <div class="d-flex flex-sm-row pt-2">
                     <!--Carousel Wrapper-->
                     <div id="carouselAutunControl" class="carousel slide carousel-fade" data-ride="carousel">
@@ -74,9 +74,9 @@
     </div>
 
     <div class="container">
-        <div class="text-center pt-4">
-                <h2>Chamonix</h2>
-                <a href=""><button class="p-3 mb-2 btn btn-primary text-white">Aller sur le site de laser game Chamonix</button></a>
+        <div class="text-center pt-4 mb-4">
+                <h2 class="h1">Chamonix</h2>
+                <a href="{{ path('chamonixMenu') }}"><button class="p-3 mb-2 btn btn-primary text-white">Accéder à urbanarena de Chamonix</button></a>
             <div class="d-flex flex-sm-row pt-2">
                     <!--Carousel Wrapper-->
                     <div id="carouselChamonixControl" class="carousel slide carousel-fade" data-ride="carousel">
@@ -140,5 +140,5 @@
 <!--/.Carousel Wrapper-->
             </div>
         </div>
-    </div>
+    </div> <br>
 {% endblock %}
