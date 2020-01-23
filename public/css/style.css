@@ -2,8 +2,8 @@
 a.facebook{
     color: #3B5998;
 }
-a.snapchat{
-    color: #fffc01;
+a.instagram{
+    color: #3f729b;
 }
 html {
     position: relative;
@@ -33,3 +33,6 @@ html {
     width:100%;
     position:absolute;
     }
+/*    background: black;
+    color: white;
+}*/
