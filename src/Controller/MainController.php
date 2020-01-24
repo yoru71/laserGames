@@ -17,63 +17,63 @@ class MainController extends AbstractController
         ]);
     }
     /**
-     * @Route("autunMenu", name="autunMenu")
+     * @Route("autun-menu", name="autunMenu")
      */
     public function autunMenu()
     {
         return $this->render('main/autunMenu.html.twig');
     }
     /**
-     * @Route("chamonixMenu", name="chamonixMenu")
+     * @Route("chamonix-menu", name="chamonixMenu")
      */
     public function chamonyMenu()
     {
         return $this->render('main/chamonixMenu.html.twig');
     }
     /**
-     * @Route("laserGameAutun", name="laserGameAutun")
+     * @Route("laser-game-autun", name="laserGameAutun")
      */
     public function laserGameAutun()
     {
         return $this->render('main/laserGameAutun.html.twig');
     }
     /**
-     * @Route("laserGameChamonix", name="laserGameChamonix")
+     * @Route("laser-game-chamonix", name="laserGameChamonix")
      */
     public function laserGameChamonix()
     {
         return $this->render('main/laserGameChamonix.html.twig');
     }
     /**
-     * @Route("salleGaming", name="salleGaming")
+     * @Route("salle-gaming", name="salleGaming")
      */
     public function salleGaming()
     {
         return $this->render('main/salleGaming.html.twig');
     }
     /**
-     * @Route("lancerHacheAutun", name="lancerHacheAutun")
+     * @Route("lancer-de-hache-autun", name="lancerHacheAutun")
      */
     public function lancerHacheAutun()
     {
         return $this->render('main/lancerHacheAutun.html.twig');
     }
     /**
-     * @Route("lancerHacheChamonix", name="lancerHacheChamonix")
+     * @Route("lancer-de-hache-chamonix", name="lancerHacheChamonix")
      */
     public function lancerHacheChamonix()
     {
         return $this->render('main/lancerHacheChamonix.html.twig');
     }
     /**
-     * @Route("bubbleFootAutun", name="bubbleFootAutun")
+     * @Route("bubblefoot-autun", name="bubbleFootAutun")
      */
     public function bubbleFootAutun()
     {
         return $this->render('main/bubbleFootAutun.html.twig');
     }
     /**
-     * @Route("bubbleFootChamonix", name="bubbleFootChamonix")
+     * @Route("bubblefoot-chamonix", name="bubbleFootChamonix")
      */
     public function bubbleFootChamonix()
     {
