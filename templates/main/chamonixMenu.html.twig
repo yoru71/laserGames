@@ -16,6 +16,11 @@
                     <a class="nav-link h2" href="{{ path('chamonixMenu') }}">Chamonix</a>
                 </li>
             </ul>
+            <ul class="navbar-nav text-center">
+                <li class="nav-item{% if route == 'accueil' %} active{% endif %}">
+                    <a class="nav-link h2" href="{{ path('accueil') }}">Urban arena</a>
+                </li>
+            </ul>
             <ul class="navbar-nav text-right">
                 <li class="nav-item{% if route == 'laserGameChamonix' %} active{% endif %}">
                     <a class="nav-link h2" href="{{ path('laserGameChamonix') }}">Laser Game</a>
