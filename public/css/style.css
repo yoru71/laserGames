@@ -55,3 +55,9 @@ html {
     grid-column: 1/3;
     grid-row: 2; 
   }
+body{
+    background-color: #1b2656;
+}
+button{
+    color:#FFAF1C;
+}
