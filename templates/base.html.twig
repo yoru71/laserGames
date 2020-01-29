@@ -7,7 +7,8 @@
     <title>{% block title %}{% endblock %} Laser Game</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')}}">
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap')}}" rel="stylesheet"> 
     {% block stylesheets %} {% endblock %}
 </head>
 <body>
@@ -40,10 +41,10 @@
           <p>
           71360
           </p>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/urbanarenaautun/">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.facebook.com/urbanarenaautun/')}}">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.instagram.com/urbanarenaautun/?hl=fr">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.instagram.com/urbanarenaautun/?hl=fr')}}">
             <i class="fab fa-instagram"></i>
         </a>
         </div>
@@ -60,10 +61,10 @@
           <p>
             74400
           </p>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/urbanarenachamonix/">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.facebook.com/urbanarenachamonix/')}}">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.instagram.com/urbanarenachamonix/?hl=fr">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.instagram.com/urbanarenachamonix/?hl=fr')}}">
             <i class="fab fa-instagram"></i>
         </a>
         </div>
