@@ -38,48 +38,30 @@
         <!--Carousel Wrapper-->
         <div class="one">
             <div id="carouselAutunControl" class="carousel slide carousel-fade pr-4" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
+
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                            <img class="d-block w-100" src="{{asset('image/fusil1.jpg')}}"
                                 alt="First slide">
                             <div class="mask rgba-black-light"></div>
                         </div>
-                        <div class="carousel-caption">
-                            <h3 class="h3-responsive">Light mask</h3>
-                            <p>First text</p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                            <img class="d-block w-100" src="{{asset('image/laserTir2.jpg')}}"
                                 alt="Second slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
-                        <div class="carousel-caption">
-                            <h3 class="h3-responsive">Strong mask</h3>
-                            <p>Secondary text</p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                            <img class="d-block w-100" src="{{asset('image/terrain.jpg')}}"
                                 alt="Third slide">
                             <div class="mask rgba-black-slight"></div>
-                        </div>
-                        <div class="carousel-caption">
-                            <h3 class="h3-responsive">Slight mask</h3>
-                            <p>Third text</p>
                         </div>
                     </div>
                 </div>
@@ -103,8 +85,22 @@
         <p class="text-white"> 20 personne Max, 4 minimum.
             <br>
             Le laser game établie sur plusieurs niveaux dispose d'un espace intérieur de 300 m² avec effets lumineux et fumée, ainsi que d'un espace extérieur de 500 m² avec cachettes.
-           Venez jouer avec des réplique d'armes plus vrais que nature.</p><br>
+            Venez jouer avec des réplique d'armes plus vrais que nature.</p><br>
+        <div class="text-white">
+            <h2 class=" text-center">Tarif</h2>
+            <ul>
+                <li>15 minutes/5 €</li>
+                <li>30 minutes/10 €</li>
+                <li>60 minutes/15 €</li>
+            </ul>                                       
+        </div>
     </div>
-
+    <div class="text-center text-white">
+        <h3>Laser game anniversaire autun :</h3>
+        <ul>
+            <li>12€/pers gâteau boisson bonbon 30min de jeux</li>
+            <li>15€/pers gâteau boisson bonbon 60min de jeux </li>
+        </ul>  
+    </div>
 </div>
 {% endblock %}
