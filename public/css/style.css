@@ -39,7 +39,8 @@ html {
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
@@ -64,3 +65,9 @@ body{
 .font{
     font-family: 'Saira Stencil One', cursive;
 }
+
+
+  @media (min-width: 600px) {
+    .wrapper { grid-template-columns: repeat(2, 1fr); }
+    
+  }
