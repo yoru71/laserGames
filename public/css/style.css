@@ -64,3 +64,21 @@ body{
 .font{
     font-family: 'Saira Stencil One', cursive;
 }
+
+.logo-position{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+@media screen and (max-width: 420px)
+{
+    .logo-position{
+        left : 10px;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .logo-position{
+        right : 200px;
+    }
+}
