@@ -37,33 +37,20 @@ html {
     color: white;
 }*/
 
-.wrapper{
-    display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .two { 
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .three{
-    grid-column: 1/3;
-    grid-row: 2; 
-  }
 body{
     background-color: #1b2656;
 }
 .orange{
-    color:#FFAF1C
+    color:#FFAF1C;
 }
 .font{
     font-family: 'Saira Stencil One', cursive;
+}
+.gridy {
+    display: grid;
+    grid-template-areas: "a b" "c c" ;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-auto-rows: auto;
 }
 
 .logo-position{
@@ -71,7 +58,7 @@ body{
     right: 50px;
     bottom: 100px;
     width: 350px;
-}
+} 
 @media screen and (max-width: 420px)
 {
     .logo-position{
@@ -87,7 +74,21 @@ body{
     }
 }
 
-  @media (min-width: 600px) {
-    .wrapper { grid-template-columns: repeat(2, 1fr); }
-    
+
+  /* Responsive */
+@media (max-width: 600px) {
+    .container {
+      grid-template-areas: "a" "b" "c";
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+  .one {
+    grid-area: a;
+  }
+  .two {
+    grid-area: b;
+  }
+  .three {
+    grid-area: c;
   }
