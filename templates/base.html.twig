@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,121 +8,135 @@
     <title>{% block title %}{% endblock %} Laser Game</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')}}">
-    <link href="{{ asset('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap')}}" rel="stylesheet"> 
+    <link rel="stylesheet"
+        href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')}}">
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap')}}" rel="stylesheet">
     {% block stylesheets %} {% endblock %}
 </head>
+
 <body>
 
-{% block body %}{% endblock %}
+    {% block body %}{% endblock %}
 
-<img src="{{asset('image/logo.png')}}" class="logo-position" alt="urbanarena logo">
-
-<!-- Footer -->
-<footer class="page-footer footer font-small mdb-color bg-dark">
-
-    <!-- Footer Links -->
-    <div class="col-xs-12 col-sm-12 col-md-12 bg-dark">
-  
-      <!-- Footer links -->
-      <div class="row text-center text-md-left pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Urban arena</h6>
-          <p>Nous sommes une société de loisir, qui vous propose différentes activités, à Autun comme à Chamonix. Ne tardez pas retrouvez nous et contactez nous, grâce informations donné à la suite</p>
+    <div class="container">
+        <div class="row">
+            <div class="image-fluid pb-5 mb-5">
+                <img src="{{asset('image/logo.png')}}" class="logo-style" alt="urbanarena logo">
+            </div>
         </div>
-        <!-- Grid column -->
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Autun</h6>
-          <p>
-          11 bis du Théatre Romain
-          </p>
-          <p>
-          71360
-          </p>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.facebook.com/urbanarenaautun/')}}">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.instagram.com/urbanarenaautun/?hl=fr')}}">
-            <i class="fab fa-instagram"></i>
-        </a>
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Chamonix-Mont-Blanc</h6>
-          <p>
-            823 allée recteur payot 
-          </p>
-          <p>
-            74400
-          </p>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.facebook.com/urbanarenachamonix/')}}">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="btn-floating btn-sm rgba-white-slight mx-1" href="{{ asset('https://www.instagram.com/urbanarenachamonix/?hl=fr')}}">
-            <i class="fab fa-instagram"></i>
-        </a>
-        </div>
-  
-        <!-- Grid column -->
-        <hr class="w-100 clearfix d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-          <p>
-            <i class="fas fa-envelope mr-3"></i>urbanarena@orange.fr</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i>07 67 63 92 42</p>
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Footer links -->
-  
-      <hr>
-  
-      <!-- Grid row -->
-      <div class="row d-flex align-items-center">
-  
-        <!-- Grid column -->
-        <div class="col-md-7 col-lg-8">
-  
-          <!--Copyright-->
-          <p class="text-center text-md-left">© 2020 Copyright
-          </p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-5 col-lg-4 ml-lg-0">
-  
-          <!-- Social buttons -->
-          <div class="text-center text-md-right">
-            
-          </div>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
     </div>
-    <!-- Footer Links -->
-  
-  </footer>
-  <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class="page-footer footer font-small mdb-color bg-dark">
+
+        <!-- Footer Links -->
+        <div class="col-xs-12 col-sm-12 col-md-12 bg-dark">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Urban arena</h6>
+                    <p>Nous sommes une société de loisir, qui vous propose différentes activités, à Autun comme à
+                        Chamonix. Ne tardez pas retrouvez nous et contactez nous, grâce informations donné à la suite
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Autun</h6>
+                    <p>
+                        11 bis du Théatre Romain
+                    </p>
+                    <p>
+                        71360
+                    </p>
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1"
+                        href="{{ asset('https://www.facebook.com/urbanarenaautun/')}}">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1"
+                        href="{{ asset('https://www.instagram.com/urbanarenaautun/?hl=fr')}}">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Chamonix-Mont-Blanc</h6>
+                    <p>
+                        823 allée recteur payot
+                    </p>
+                    <p>
+                        74400
+                    </p>
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1"
+                        href="{{ asset('https://www.facebook.com/urbanarenachamonix/')}}">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1"
+                        href="{{ asset('https://www.instagram.com/urbanarenachamonix/?hl=fr')}}">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>urbanarena@orange.fr</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>07 67 63 92 42</p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2020 Copyright
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
 
 
     <script src="{{ asset('js/jquery-3.4.1.slim.min.js') }}"></script>
@@ -129,4 +144,5 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     {% block javascripts %}{% endblock %}
 </body>
+
 </html>

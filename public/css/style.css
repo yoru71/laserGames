@@ -53,24 +53,25 @@ body{
     grid-auto-rows: auto;
 }
 
-.logo-position{
-    position: absolute;
-    right: 50px;
-    bottom: 100px;
-    width: 350px;
-} 
-@media screen and (max-width: 420px)
+.logo-style{
+    padding-left: 100px;
+    width: 70%;
+}
+@media screen and (min-width: 420px)
 {
-    .logo-position{
-        left : 80px;
+    .logo-style{
+        position: absolute;
+        width : 30%;
+        right : 60px;
+        bottom: 80px;
     }
 }
-@media screen and (max-width: 900px)
+@media screen and (min-width: 900px)
 {
-    .logo-position{
-        bottom: 70px;
-        right : 290px;
-        width: 200px;
+    .logo-style{
+        right: 20px;
+        bottom: 80px;
+        width: 15%;
     }
 }
 
