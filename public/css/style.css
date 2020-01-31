@@ -70,17 +70,20 @@ body{
     position: absolute;
     right: 50px;
     bottom: 100px;
+    width: 350px;
 }
 @media screen and (max-width: 420px)
 {
     .logo-position{
-        left : 10px;
+        left : 80px;
     }
 }
 @media screen and (max-width: 900px)
 {
     .logo-position{
-        right : 200px;
+        bottom: 70px;
+        right : 290px;
+        width: 200px;
     }
 }
 
