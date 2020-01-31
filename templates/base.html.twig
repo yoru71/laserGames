@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}{% endblock %} Laser Game</title>
+    <meta name="description" content="Bienvenue sur le site officiel de Urban Arena. Venez avec vos proches faire du laser game sur Autun et Chamonix.">
+    <title>{% block title %}{% endblock %} Urban Arena</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet"
-        href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')}}">
-    <link href="{{ asset('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')}}">
+    <link rel="icon" href="{{asset('image/favicon.png')}}">
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap')}}" rel="stylesheet"> 
     {% block stylesheets %} {% endblock %}
 </head>
 
